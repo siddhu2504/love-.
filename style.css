@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pulse-text {
+    font-size: 3em;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+.heart {
+    color: red;
+    font-size: 4em;
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+.btn {
+    background-color: #ff1493;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #d11a70;
+}

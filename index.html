@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Day - First Page</title>
+    <link rel="stylesheet" href="styler.css">
+        
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="pulse-text"> Hey Shraddha Jii  Will you be mine forever?</div>
+    <div class="heart">❤️</div>
+    
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Day - Love Note</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .card {
+            display: flex;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            flex: 1;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HGYbepE6CbjLb7WIKk0Lf3VG3Fkq_7xmEQ&s'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+        }
+        .right {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffccff;
+        }
+        .note {
+            font-size: 1.5em;
+            font-style: italic;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .btn {
+            background-color: #ff1493;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #d11a70;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="left"></div>
+    <div class="right">
+        <div class="note"> I knew I loved you the moment I met you, but now I know I want to spend the rest of my life loving you. Will you be mine forever?. ❤️</div>
+        <button class="btn" onclick="celebrate()">Click to Celebrate!</button>
+    </div>
+</div>
+
+   
+<script src="script.js"></script>
+</body>
+</html>
